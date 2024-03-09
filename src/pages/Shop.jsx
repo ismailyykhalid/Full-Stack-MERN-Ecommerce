@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Popular from "../components/Popular";
 import OfferBanner from "../components/OfferBanner";
 import NewCollection from "../components/NewCollection";
-import NewsLetter from "../components/NewsLetter";
 
 const Shop = () => {
   return (
@@ -12,7 +11,6 @@ const Shop = () => {
       <Popular />
       <OfferBanner />
       <NewCollection />
-      <NewsLetter />
     </div>
   );
 };

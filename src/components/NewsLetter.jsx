@@ -1,13 +1,15 @@
 import React from "react";
 import logofooter from "../assets/logofooter.png";
+import { Link } from "react-router-dom";
 
 const NewsLetter = () => {
   return (
+    // NEW LETTER START HERE
     <div>
       <div class="mx-auto  max-w-7xl px-6 sm:mt-10 mt-10 lg:px-6">
         <div class="relative isolate overflow-hidden bg-gradient-to-r from-teal-400 to-yellow-200 px-6 py-24 shadow-2xl rounded-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-          <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl">
-            Keep Updated
+          <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl uppercase">
+            Stay Updated
           </h2>
 
           <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-600">
@@ -67,59 +69,52 @@ const NewsLetter = () => {
         </div>
       </div>
       <div>
+        {/* NEW LETTER END HERE */}
+        {/* FOOTER START HERE  */}
         <footer class="bg-white">
           <div class="container px-4 mx-auto">
-            <div class="pt-24 pb-11 mx-auto max-w-4xl">
-              <img className="w-32 md:w-40 grid" src={logofooter} alt="" />
-              <div class="flex flex-wrap justify-center -mx-3 lg:-mx-6">
-                <div class="w-full md:w-auto p-3 md:px-6">
-                  <a
-                    href="/terms"
-                    class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
-                  >
-                    Terms
-                  </a>
-                </div>
-                <div class="w-full md:w-auto p-3 md:px-6">
-                  <a
-                    href="/privacy"
-                    class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
-                  >
-                    Privacy
-                  </a>
-                </div>
-                <div class="w-full md:w-auto p-3 md:px-6">
-                  <a
-                    class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
-                    href=""
-                  >
-                    Contact Us
-                  </a>
-                </div>
-                <div class="w-full md:w-auto p-3 md:px-6">
-                  <a
-                    href="/careers"
-                    class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
-                  >
-                    Careers
-                  </a>
-                </div>
-                <div class="w-full md:w-auto p-3 md:px-6">
-                  <a
-                    href="/pricing"
-                    class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
-                  >
-                    Pricing
-                  </a>
+            <div class="pt-24 pb-11 mx-auto max-w-4xl flex flex-col mg:justify-center md:items-center">
+              <Link to="/">
+                <img className="w-40 md:w-48" src={logofooter} alt="" />
+              </Link>
+              <div>
+                <div class="flex flex-wrap justify-center -mx-3 lg:-mx-6">
+                  <div class="w-full md:w-auto p-3 md:px-6">
+                    <a class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium">
+                      Terms
+                    </a>
+                  </div>
+                  <div class="w-full md:w-auto p-3 md:px-6">
+                    <a class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium">
+                      Privacy
+                    </a>
+                  </div>
+                  <div class="w-full md:w-auto p-3 md:px-6">
+                    <a class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium">
+                      Contact Us
+                    </a>
+                  </div>
+                  <div class="w-full md:w-auto p-3 md:px-6">
+                    <a class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium">
+                      Careers
+                    </a>
+                  </div>
+                  <div class="w-full md:w-auto p-3 md:px-6">
+                    <a class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium">
+                      Pricing
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="border-b border-gray-100"></div>
-          <div class="container px-4 mx-auto">
-            <p class="py-10 md:pb-20 text-md text-gray-400 font-medium text-center">
-              © 2023 example.com. All rights reserved.
-            </p>
+            <div class="border-b border-gray-100"></div>
+            <div class="container px-4 mx-auto">
+              <p class="py-10 md:pb-20 text-md text-gray-400 font-medium text-center">
+                © 2024{" "}
+                <span className=" font-bold text-black">Ismail Khalid.</span>{" "}
+                All rights reserved.
+              </p>
+            </div>
           </div>
         </footer>
       </div>

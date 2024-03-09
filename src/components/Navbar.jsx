@@ -107,7 +107,7 @@ const Navbar = () => {
             </li>
           </div>
 
-          <div class="h-7 w-7 hover:ring-4 user cursor-pointer relative ring-green-700/30 rounded-full bg-cover bg-center bg-[url('https://i.pinimg.com/564x/bd/8b/36/bd8b36d4d0ace8a94817a5502aaed923.jpg')]">
+          <div class="h-7 w-7 hover:ring-4 user cursor-pointer relative ring-green-700/30 rounded-full bg-cover bg-center bg-[url('https://i.pinimg.com/564x/c8/96/5a/c8965a48e07437c660d31e57afb382c7.jpg')]">
             <div
               class={` drop-down sm:hidden  w-48 overflow-hidden bg-white rounded-md shadow absolute top-12 right-[-60px] ${
                 open ? "block" : "hidden"

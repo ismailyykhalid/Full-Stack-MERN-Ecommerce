@@ -1,6 +1,5 @@
 import React from "react";
-import hero_image from "../assets/hero_image.png";
-import arrow_icon from "../assets/arrow.png";
+import logo from "../assets/logo.png";
 
 const Hero = () => {
   return (
@@ -24,8 +23,8 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-              <img src={hero_image} class="max-w-xs md:max-w-sm m-auto" />
+            <div class="hidden sm:block sm:w- lg:w-3/5 relative mt-[-180px]">
+              <img src={logo} class=" md:max-w-lg m-auto" />
             </div>
           </div>
         </div>
