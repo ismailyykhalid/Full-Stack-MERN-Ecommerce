@@ -19,16 +19,16 @@ import kid_banner from "../src/assets/banner_kids.png";
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <>
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/signup" element={<LoginSignup />} />
-          <Route path="/product" element={<Product />} />
-          <Route path=":productId" element={<Product />} />
+          <Route path="/product/:productId" element={<Product />} />
+
           <Route path="/shop" element={<Shop />} />
           <Route
             path="/men"
@@ -44,8 +44,8 @@ const App = () => {
           />
         </Routes>
         <NewsLetter />
-      </BrowserRouter>
-    </>
+      </>
+    </BrowserRouter>
   );
 };
 

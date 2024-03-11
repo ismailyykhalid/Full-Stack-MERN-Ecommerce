@@ -6,15 +6,15 @@ const Navbar = () => {
   const [selected, setSelected] = useState("Shop");
   return (
     <>
-      <nav class="flex items-center relative justify-between bg-white px-5 py-4 w-full rounded-xl">
+      <nav className="flex items-center relative justify-between bg-white px-5 py-4 w-full rounded-xl">
         <div className="flex items-center w-16">
           <img
             src="https://i.pinimg.com/564x/8a/3c/7f/8a3c7fbd4d9532a244ef3d5027d6e4c6.jpg"
             alt=""
           />
-          <Link class="" to="/">
+          <Link className="" to="/">
             <svg
-              class="h-20 absolute top-4 left-12  "
+              className="h-20 absolute top-4 left-12  "
               id="logo-78"
               width="100"
               height="90"
@@ -23,7 +23,7 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                class="w-4"
+                className="w-4"
                 d="M170.394 7.66415L174.568 11.8668C174.714 11.9829 174.822 12.1396 174.878 12.3171C174.963 13.3515 174.18 13.4081 173.38 13.4659C173.034 13.4909 172.685 13.5162 172.402 13.621C170.998 14.0009 169.746 14.8033 168.815 15.9193C167.883 17.0353 167.318 18.4109 167.195 19.8593C167.105 20.0266 166.969 20.1643 166.802 20.2558C166.636 20.3474 166.447 20.3888 166.257 20.3753C166.037 20.3558 165.831 20.2595 165.675 20.1032L164.305 18.7238C164.315 18.8182 164.315 18.9117 164.315 18.9869V19.8968C164.315 19.9543 164.317 20.0097 164.31 20.065C164.301 20.127 164.28 20.1888 164.231 20.2532V20.3377C164.231 20.3808 164.236 20.4209 164.241 20.4616C164.251 20.5449 164.262 20.6307 164.231 20.7505C164.201 20.8622 164.198 20.9925 164.194 21.1088C164.193 21.1779 164.191 21.2421 164.184 21.2945C164.174 21.3672 164.174 21.4448 164.168 21.5223C164.162 21.5949 164.15 21.6674 164.118 21.7354C164.074 21.8306 164.059 21.9215 164.055 22.0139C164.052 22.0581 164.052 22.1026 164.052 22.1482L163.996 22.439L161.867 32.5891L161.698 33.3489L161.632 34.4559L160.694 39.2495L160.544 40H84.6248L84.2589 39.6341L84.1932 39.9531H76.0694L71.5478 35.4034L71.9793 33.3489H69.4277L67.8424 31.7448C65.8749 33.1775 63.4934 33.9285 61.06 33.8837C58.4442 33.9866 55.8941 33.0488 53.9681 31.2758L51.5009 28.7899L50.9662 31.2851C50.9006 31.6416 50.8161 31.9794 50.7223 32.3077L50.6379 32.6173L50.4972 33.0675C50.4856 33.1066 50.4699 33.1444 50.4503 33.1801C50.3106 33.5937 50.1446 33.9979 49.9531 34.3902C49.9581 34.4054 49.9581 34.4219 49.9531 34.4371C49.9285 34.4891 49.9003 34.5392 49.8686 34.5872C49.727 34.8675 49.5705 35.1399 49.3996 35.4034C49.3679 35.4513 49.3397 35.5015 49.3152 35.5535L49.212 35.666C48.9827 35.9949 48.732 36.3082 48.4615 36.6041C48.3873 36.6783 48.3131 36.748 48.2377 36.8164C48.1607 36.8864 48.0825 36.9551 48.0018 37.0262L47.7955 37.2232C47.6654 37.3313 47.5323 37.4356 47.3964 37.5361C47.2843 37.619 47.1703 37.6992 47.0544 37.7767C45.1211 38.9222 42.891 39.4674 40.6473 39.3433C37.5516 39.3433 35.075 38.4427 33.5084 36.8668L29.0994 32.4296C27.3383 33.4262 25.3442 33.9377 23.3208 33.9118C20.7129 33.9925 18.1782 33.042 16.2664 31.2664L13.7993 28.7805L13.0019 32.6173L12.8424 33.3771H4.54036L0 28.7992L0.234521 27.6923L5.22515 3.72418L5.37521 2.97372H13.7054L13.9212 3.18013V2.97372H70.0469L70.2533 3.18013V2.97372H78.3771L82.9174 7.55158L82.6923 8.64913L82.4484 9.8499H84.7842L85.1501 10.2158C86.1779 9.61344 87.3453 9.29005 88.5366 9.27769C89.4126 9.26039 90.2825 9.42678 91.0903 9.76608C91.8982 10.1054 92.626 10.61 93.227 11.2476L93.105 11.1069L95.3095 13.3302C96.651 10.8068 99.6622 9.27769 103.752 9.27769C106.923 9.27769 109.259 10.0844 110.675 11.5478L112.27 13.152L112.805 10.5722L112.964 9.82173H121.097L123.424 12.1576L123.752 10.5816L123.912 9.83112H139.916L140.347 10.2627C141.431 9.62306 142.672 9.29818 143.931 9.32458C144.688 9.29503 145.442 9.43365 146.14 9.73047C146.837 10.0273 147.46 10.475 147.964 11.0413C147.938 11.0118 147.913 10.9823 147.888 10.9533C147.843 10.8995 147.798 10.847 147.75 10.7984L148.565 11.6135C149.275 10.8782 150.129 10.2959 151.072 9.90235C152.016 9.50877 153.03 9.3121 154.052 9.32458C154.595 9.2912 155.137 9.3374 155.663 9.46033L154.775 8.56473C154.654 8.43528 154.572 8.27421 154.539 8.10021C154.506 7.92621 154.523 7.74631 154.587 7.58147C154.652 7.41657 154.762 7.27343 154.905 7.16854C155.048 7.06365 155.217 7.00129 155.394 6.98875H156.107C156.299 6.97043 156.49 6.94226 156.679 6.9043C157.676 6.69474 158.614 6.26624 159.425 5.6497C160.237 5.03323 160.901 4.24418 161.37 3.33959C161.411 3.26962 161.448 3.19765 161.482 3.12384V3.07695C161.805 2.38215 162.001 1.63581 162.064 0.872416C162.08 0.635203 162.187 0.413106 162.361 0.251186C162.535 0.0892079 162.764 -0.00056984 163.002 2.72188e-06H163.077C163.219 0.0135152 163.357 0.0594347 163.479 0.134211C163.601 0.209045 163.704 0.310732 163.781 0.431543C164.456 1.08821 168.208 4.90617 168.208 4.90617C168.521 5.24238 168.498 5.67885 168.474 6.12046C168.459 6.39352 168.444 6.66858 168.508 6.92308C168.679 6.95371 168.852 6.9769 169.024 6.99259C169.19 7.00753 169.356 7.01566 169.522 7.01687C169.716 7.02093 169.905 7.0854 170.061 7.2014C170.217 7.31735 170.334 7.4791 170.394 7.66415Z"
                 fill="black"
               ></path>
@@ -38,56 +38,52 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
-        <ul id="drawer" role="menu" class="hidden sm:flex sm:gap-5">
-          <li
+        <ul id="drawer" role="menu" className="hidden sm:flex sm:gap-5">
+          <Link
+            to="Shop"
             onClick={() => setSelected("Shop")}
-            class={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
+            className={`font-medium text-sm sm:px-3  sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
               selected === "Shop" &&
-              "hover:border-b-2 rounded-full bg-lime-200 border border-gray-400 font-bold  "
+              " rounded-full bg-lime-200 border border-gray-400 font-bold "
             } `}
           >
-            <Link to="Shop" class="">
-              Shop
-            </Link>
-          </li>
-          <li
+            <li>Shop</li>
+          </Link>
+          <Link
+            to="men"
             onClick={() => setSelected("Men")}
-            class={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
+            className={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
               selected === "Men" &&
-              "hover:border-b-2 rounded-full bg-lime-200 border border-gray-400 font-bold  "
+              " rounded-full bg-lime-200 border border-gray-400 font-bold  "
             } `}
           >
-            <Link to="men" class="">
-              Men
-            </Link>
-          </li>
-          <li
+            <li>Men</li>
+          </Link>
+          <Link
+            to="women"
             onClick={() => setSelected("Women")}
-            class={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
+            className={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
               selected === "Women" &&
-              "hover:border-b-2 rounded-full bg-lime-200 border border-gray-400 font-bold  "
+              " rounded-full bg-lime-200 border border-gray-400 font-bold  "
             } `}
           >
-            <Link to="women" class="">
-              Women
-            </Link>
-          </li>
-          <li
+            <li>Women</li>
+          </Link>
+          <Link
+            to="kids"
             onClick={() => setSelected("Kids")}
-            class={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
+            className={`font-medium text-sm sm:px-3 sm:active:rounded-full cursor-pointer  sm:p-0 sm:none text-primary ${
               selected === "Kids" &&
-              "hover:border-b-2 rounded-full bg-lime-200 border border-gray-400 font-bold  "
+              " rounded-full bg-lime-200 border border-gray-400 font-bold  "
             } `}
           >
-            <Link to="kids" class="">
-              Kids
-            </Link>
-          </li>
+            <li>Kids</li>
+          </Link>
         </ul>
-        <div class="flex gap-3 items-center justify-center">
+        <div className="flex gap-3 items-center justify-center">
           <div>
             <Link
-              class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               to={"login"}
             >
               Login
@@ -95,108 +91,63 @@ const Navbar = () => {
           </div>
           {/* Cart icon */}
           <div className=" mt-4 mb-0">
-            <li class="font-sans block lg:inline-block   text-black hover:text-gray-700 mb-0">
-              <Link to="cart" role="button" class="relative flex">
-                <svg class="flex-1 w-8 h-8">
+            <li className="font-sans block lg:inline-block   text-black hover:text-gray-700 mb-0">
+              <Link to="cart" role="button" className="relative flex">
+                <svg className="flex-1 w-8 h-8">
                   <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
                 </svg>
-                <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
+                <span className="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
                   0
                 </span>
               </Link>
             </li>
           </div>
 
-          <div class="h-7 w-7 hover:ring-4 user cursor-pointer relative ring-green-700/30 rounded-full bg-cover bg-center bg-[url('https://i.pinimg.com/564x/c8/96/5a/c8965a48e07437c660d31e57afb382c7.jpg')]">
+          <div className="h-7 w-7 hover:ring-4 user cursor-pointer relative ring-green-700/30 rounded-full bg-cover bg-center bg-[url('https://i.pinimg.com/564x/38/c2/2a/38c22ae8df11bd86fc57824947ab4c62.jpg')]">
             <div
-              class={` drop-down sm:hidden  w-48 overflow-hidden bg-white rounded-md shadow absolute top-12 right-[-60px] ${
+              className={` drop-down sm:hidden  w-48 overflow-hidden bg-white rounded-md shadow absolute top-12 right-[-60px] ${
                 open ? "block" : "hidden"
               } `}
             >
               <ul>
-                <li class="px-3 py-3 text-sm  font-medium flex items-center space-x-2 hover:bg-slate-400">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                  </span>
-                  <span> Men</span>
-                </li>
-                <li class="px-3  py-3  text-sm font-medium flex items-center space-x-2 hover:bg-slate-400">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                  </span>
-                  <span> Women </span>
-                </li>
-                <li class="px-3  py-3 text-sm font-medium flex items-center space-x-2 hover:bg-slate-400">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                      />
-                    </svg>
-                  </span>
-                  <span> Kids </span>
-                </li>
+                <Link to="men">
+                  <li className="px-3 py-3 text-sm  font-medium flex items-center space-x-2 hover:bg-slate-400">
+                    <span>👨‍🦰</span>
+                    <span> Men</span>
+                  </li>
+                </Link>
+                <Link to="women">
+                  <li className="px-3  py-3  text-sm font-medium flex items-center space-x-2 hover:bg-slate-400">
+                    <span>👩‍🦰</span>
+                    <span> Women </span>
+                  </li>
+                </Link>
+                <Link to="kids">
+                  <li className="px-3  py-3 text-sm font-medium flex items-center space-x-2 hover:bg-slate-400">
+                    <span>👶</span>
+                    <span> Kids </span>
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
           <div
             onClick={() => setOpen(!open)}
-            class="sm:hidden cursor-pointer "
+            className="sm:hidden cursor-pointer "
             id="mobile-toggle"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                class=""
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                className=""
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
