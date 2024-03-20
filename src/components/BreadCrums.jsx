@@ -5,7 +5,10 @@ const BreadCrums = ({ product }) => {
   return (
     <div>
       <div>
-        <nav className="flex mb-5" aria-label="Breadcrumb bg-black mt-16">
+        <nav
+          className=" hidden sm:block mt-5 content-center mx-12"
+          aria-label="Breadcrumb bg-black mt-16"
+        >
           <ol className="inline-flex items-center space-x-1 md:space-x-2">
             <li className="inline-flex items-center">
               <a
@@ -13,7 +16,7 @@ const BreadCrums = ({ product }) => {
                 className="text-gray-700 hover:text-gray-900 inline-flex items-center"
               >
                 <svg
-                  className="w-5 h-5 mr-2.5"
+                  className="w-4 h-4 md:w-5 md:h-5 mr-2.5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +64,7 @@ const BreadCrums = ({ product }) => {
                 </svg>
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium"
+                  className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium capitalize"
                 >
                   {product.category}
                 </a>
@@ -83,7 +86,7 @@ const BreadCrums = ({ product }) => {
                 </svg>
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium"
+                  className="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium capitalize"
                 >
                   {product.name}
                 </a>

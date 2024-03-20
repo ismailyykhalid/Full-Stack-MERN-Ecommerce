@@ -75,7 +75,12 @@ const NewsLetter = () => {
           <div className="container px-4 mx-auto">
             <div className="pt-24 pb-11 mx-auto max-w-4xl flex flex-col mg:justify-center md:items-center">
               <Link to="/">
-                <img className="w-40 md:w-48" src={logofooter} alt="" />
+                <img
+                  className="w-40 md:w-48"
+                  onClick={() => window.scrollTo(0, 0)}
+                  src={logofooter}
+                  alt=""
+                />
               </Link>
               <div>
                 <div className="flex flex-wrap justify-center -mx-3 lg:-mx-6">

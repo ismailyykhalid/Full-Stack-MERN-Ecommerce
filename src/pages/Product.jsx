@@ -15,8 +15,7 @@ const Product = () => {
   return (
     <div>
       <BreadCrums product={product} />
-      <ProductDetail />
-      <h1>PRODCUT DETAIL PAGE with id : {productId}</h1>
+      <ProductDetail product={product} />
     </div>
   );
 };
